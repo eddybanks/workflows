@@ -1,0 +1,11 @@
+{
+  "name": "workflows",
+  "version": "1.0.0",
+  "description": "A project to showcase workflows",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Edwin Agbenyega",
+  "license": "ISC"
+}
