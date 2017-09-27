@@ -78,7 +78,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('json', function() {
-  gulp.src('builds/development/js/.*json')
+  gulp.src('builds/development/js/*.json')
     .pipe(gulpif(env === 'production', jsonminify()))
     .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'js')))
     .pipe(connect.reload())
@@ -90,7 +90,7 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
   gulp.watch('builds/development/*.html', ['html']);
-  gulp.watch('builds/development/js/.*json', ['json']);
+  gulp.watch('builds/development/js/*.json', ['json']);
 });
 
 gulp.task('connect', function() {
